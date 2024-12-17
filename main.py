@@ -52,6 +52,7 @@ async def get_task(task_id:int):
             return {"message": "Task not found"}
 
         return task
+        
 
 
 @app.delete("/tasks/{task_id}", response_model= task_response)
